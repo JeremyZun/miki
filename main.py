@@ -79,7 +79,7 @@ def submit():
         password = request.form.get("password")
     if request.method == "GET":
         name = request.args.get("name")
-        passowrd = request.args.get("password")
+        password = request.args.get("password")
     #如果獲取的資料為空
     if len(name) == 0 or len(password) == 0:
         # 回傳的形式為 json
