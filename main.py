@@ -88,4 +88,4 @@ def submit():
         return {'message':"正確!!",'name':name,'age':age}
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run( debug=True)
