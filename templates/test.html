@@ -1,13 +1,4 @@
 <!DOCTYPE html>
-var toastTrigger = document.getElementById('liveToastBtn')
-var toastLiveExample = document.getElementById('liveToast')
-if (toastTrigger) {
-  toastTrigger.addEventListener('click', function () {
-    var toast = new bootstrap.Toast(toastLiveExample)
-
-    toast.show()
-  })
-}
 <html>
     <head>
         <title>test</title>
@@ -28,5 +19,17 @@ if (toastTrigger) {
             </div>
         </div>
         </div>
+        
+        <script>
+            var toastTrigger = document.getElementById('liveToastBtn')
+            var toastLiveExample = document.getElementById('liveToast')
+            if (toastTrigger) {
+              toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample)
+            
+                toast.show()
+              })
+            }
+            </script>
     </body>
 </html>
