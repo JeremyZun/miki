@@ -76,16 +76,16 @@ def submit():
     if request.method == "POST":
         # 從前端拿數據
         name = request.form.get("name")
-        age = request.form.get("age")
+        password = request.form.get("password")
     if request.method == "GET":
         name = request.args.get("name")
-        age = request.args.get("age")
+        passowrd = request.args.get("password")
     #如果獲取的資料為空
-    if len(name) == 0 or len(age) == 0:
+    if len(name) == 0 or len(password) == 0:
         # 回傳的形式為 json
         return {'message':"錯誤!請填寫帳號密碼!!"}
     else:
-        return {'message':"正確!!",'name':name,'age':age}
+        return {'message':"正確!!",'name':name,'password':password}
 
 if __name__ == "__main__":
     app.run( debug=True)
