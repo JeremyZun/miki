@@ -9,6 +9,10 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.line{
+    text-decoration: none;
+
+}
 .hello{
     background-color: #0b132b;
     width: 400px;
@@ -16,7 +20,6 @@ body{
     padding: 40px;
     box-shadow: 10px 10px 25px #00000080;
     text-align: center;
-    text-decoration: none;
 }
 .hello input{
     display: block;
