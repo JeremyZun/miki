@@ -10,11 +10,13 @@ app.config['SQLALCGEMY_DATABASE_URI'] = 'salite:///users.sqlite3'
 app.config['SQLALCGEMY_TRACK_MODIFICATIONS'] = False
 app.permanent_session_lifetime = timedelta(minutes=5)
 
-
-
 @app.route("/")
 def home():
     return render_template("index.html")
+
+@app.route("/index-tw")
+def home():
+    return render_template("index-tw.html")
 
 @app.route("/test")
 def test():
