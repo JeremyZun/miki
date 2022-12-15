@@ -85,7 +85,7 @@ def submit():
         # 回傳的形式為 json
         return {'message':"錯誤!請填寫帳號密碼!!"}
     else:
-        return {'message':"正確!!",'name':name,'password':password}
+        return {'message':"正確!!",'Account':name,'Password':password}
 
 if __name__ == "__main__":
     app.run( debug=True)

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <link rel="stylesheet" href="../static/css/sign.css">
@@ -11,8 +12,25 @@
       <input type="password" placeholder="Password" id="password" name="password"/>
       <input type="submit" value="Submit"/>
       <a href="/miki/templates/">
-        <input type="button" value="回到主頁" class="line">
+        <input type="button" value="回到主頁" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
       </a>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"><b>是否要儲值信仰?</b></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              當你儲值OM信仰你可以獲得小編們的一句"愛的話" 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="alert('小編:我們愛你!')">是的!</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </form>
-  </body>
+  </body>  
 </html>
