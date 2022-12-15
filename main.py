@@ -81,7 +81,7 @@ def submit():
         name = request.args.get("name")
         password = request.args.get("password")
     #如果獲取的資料為空
-    if len(name) == 0 or len(password) == 0:
+    if len(name) == 0 and len(password) == 0:
         # 回傳的形式為 json
         return {'message':"錯誤!請填寫帳號密碼!!"}
     else:
