@@ -92,20 +92,6 @@ btnRecord.onclick = () => {
   }
 }
 
-btnRecord.onclick = () => {
-  if (btnRecord.textContent === '停止') {
-    startRecord()
-    btnRecord.textContent = '錄影'
-    btnPlay.disabled = true
-    btnDownload.disabled = true
-  } else {
-    stopRecord()
-    btnRecord.textContent = '錄影'
-    btnPlay.disabled = false
-    btnDownload.disabled = false
-  }
-}
-
 // 回放錄影點擊
 btnPlay.onclick = () => {
   var blob = new Blob(buffer, { type: 'video/webm' })
