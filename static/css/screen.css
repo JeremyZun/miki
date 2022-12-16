@@ -5,4 +5,5 @@ body{
 .live{
     top: 50%;
     left: 75%;
+    max-height: 386px;
 }
