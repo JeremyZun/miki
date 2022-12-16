@@ -1,10 +1,72 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Test Web</title>
-        <h1>This is Just Test Web</h1>
-    </head>
-    <body>
-        <a href="https://deeeep.io/"><b>點這裡試試看<b></a>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin:0px;
+        }
+        h1{
+            z-index:1;
+            opacity:0.8;
+            font-size:50px;
+            padding-bottom: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation:colorchange 10s infinite alternate;
+        }
+
+        .video-back{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            z-index:0;
+        }
+
+        @keyframes colorchange {
+      0% {color: #418DCD;}
+      10% {color: #17b473;}
+      20% {color: #c65d20;}
+      30% {color: #a341cd;}
+      40% {color: #03965B;}
+      50% {color: #e91748;}
+      60% {color: #545C5E;}
+      70% {color: #545C5E;}
+      80% {color: #032596;}
+      90% {color: #409603;}
+      100% {color: #418DCD;}
+        }
+   
+   @media (max-width:600px){
+    h1{
+        z-index:3;
+        opacity:1;
+        font-size:21px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* animation:colorchange 10s infinite alternate; */
+        }
+         }
+
+    </style>
+</head>
+<body>
+
+        <h1>Welcome to C w C Channel</h1>
+            <video class="video-back" autoplay loop muted>
+                <source src="video/mountain.mp4" >
+            </video> 
+        
+        </div>
+
+</body>
 </html>
