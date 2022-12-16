@@ -9,7 +9,7 @@ h1{
             transform: translate(-50%, -50%);
             animation:colorchange 10s infinite alternate;
         }
-.video-back{
+.yt{
             position:absolute;
             top:0;
             left:0;
