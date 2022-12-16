@@ -1,0 +1,59 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e76f51;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.line{
+    text-decoration: none;
+
+}
+.hello{
+    background-color: #0b132b;
+    width: 400px;
+    color: #fff;
+    padding: 40px;
+    box-shadow: 10px 10px 25px #00000080;
+    text-align: center;
+}
+.hello input{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    background: none;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 22px;
+    outline: none;
+    color: #fff;
+}
+.hello input[type="text"], .hello input[type="password"] ,.hello input[type="email"]{
+    border: 2px solid #3498db;
+    width: 220px;
+}
+.hello input[type="submit"]{
+    width: 150px;
+    border: 2px solid #2ecc71;
+    cursor: pointer;
+}
+.hello input[type="button"]{
+    border: 2px solid red;
+}
+.hello input[type="text"]:focus, .hello input[type="password"]:focus, .hello input[type="email"]:focus{
+    border-color: #2ecc71;
+    width: 280px;
+    transition: 0.5s;
+}
+.hello input[type="submit"]:hover{
+    background-color: #2ecc71;
+    transition: 0.5s;
+}
+.hello input[type="button"]:hover{
+    background-color: red;
+    transition: 0.5s;
+}
