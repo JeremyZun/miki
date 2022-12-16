@@ -14,6 +14,10 @@ app.permanent_session_lifetime = timedelta(minutes=5)
 def home():
     return render_template("index.html")
 
+@app.route("/")
+def home():
+    return render_template("screen.html")
+
 @app.route("/index-tw")
 def home():
     return render_template("index-tw.html")
