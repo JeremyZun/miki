@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Test Page</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../static/css/video.css">
-    </head>
-    <body>
-        <h1>This Is Test</h1>
-    
-        <iframe class="yt" src="https://www.youtube.com/embed/HmZKgaHa3Fg?autoplay=1&mute=1&controls=0"></iframe>
-    </body>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title>Ajax test</title>
+	</head>
+	<body>
+		<h1>Ajax 練習</h1>
+		<button onclick="getData();">取得連線資料</button>
+		<script>
+				function getData(){
+					fetch("https://cwpeng.github.io/live-records-samples/data/products.json").then(function(response){
+						console.log(response);
+					});
+				}
+		</script>
+	</body>
 </html>
