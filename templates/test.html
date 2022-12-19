@@ -10,17 +10,18 @@
 		<button onclick="getData();">取得連線資料</button>
 		<div id="result"></div>
 		<script>
-				function getData(){
-					fetch("https://cwpeng.github.io/live-records-samples/data/products.json").then(function(response){
-						return console.json();
-					}).then(function(data){
-						let result=document.querySelector("#result");
-						for(let i=0;i<data.length;i++){
-							let products=data[i];
-						}
-						console.log(products)
-					});
-				}
+			function getData(){
+				fetch("https://cwpeng.github.io/live-records-samples/data/products.json").then(function(response){
+					return console.json();
+				}).then(function(data){
+					let result=document.querySelector("#result");
+					result.innerHTML="";
+					for(let i=0;i<data.length;i++){
+						let products=data[i];
+						result.innerHTML+="</div>"+products.name+","+products.price+","+products.description+"</div>";
+					}
+				});
+			}
 		</script>
 	</body>
 </html>
