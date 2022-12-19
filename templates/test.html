@@ -12,7 +12,7 @@
 		<script>
 			function getData(){
 				fetch("https://cwpeng.github.io/live-records-samples/data/products.json").then(function(response){
-					return console.json();
+					return response.json();
 				}).then(function(data){
 					let result=document.querySelector("#result");
 					result.innerHTML="";
