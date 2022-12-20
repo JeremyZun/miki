@@ -129,18 +129,50 @@
 </body>
 <h1 style="color: red; size: 100px;" class="animate__animated animate__rubberBand"><b>哈囉~歡迎來到我們的網頁</b><span class="badge bg-secondary">最新消息</span></h1>
 <h1 style="color: #fff;">請輸入你的帳號和密碼</h1>
-<!--創建兩個input輸入框，定義id分別為name,age-->
-<input type="text" id="name" name="name" placeholder="帳號">
-<br>
-<br>
-<input type="password" id="age" name="age" placeholder="密碼">
-<br>
-<br>
-<!--創建button按鈕，點擊則激發submit()事件-->
-<button onclick="submit();">提交</button>
-<a href="/miki/templates/index-tw">
-    <button type="reset">清除</button>
-</a>
+<body>
+  <form class="row g-3">
+    <div class="col-md-4">
+      <label for="validationServer01" class="form-label" style="color: #fff;">帳號</label>
+      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="輸入帳號" required>
+      <div class="valid-feedback">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationServer02" class="form-label" style="color: #fff;">密碼</label>
+      <input type="password" class="form-control is-valid" id="validationServer02" placeholder="輸入密碼" required>
+      <div class="valid-feedback">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationServerUsername" class="form-label" style="color: #fff;">Gmail</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend3">@</span>
+        <input placeholder="XXX@gmail.com" type="email" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+        <label class="form-check-label" for="invalidCheck3">
+          同意條款和條件
+        </label>
+        <div id="invalidCheck3Feedback" class="invalid-feedback">
+          在你按下按鈕前，你必須勾選同意
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">送出</button>
+      <a href="/miki/templates/index">
+        <button type="reset" class="btn btn-primary">清除</button>
+      </a>
+      <br>
+    </div>
+  </form>
+</body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
         crossorigin="anonymous">
@@ -152,25 +184,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" 
         crossorigin="anonymous">
-</script>
-<script>
-    /*在這里撰寫submit()事件*/
-    function submit() {
-        $.ajax({
-            url: "submit", /*資料提交到submit處*/
-            type: "GET",  /*采用POST方法提交*/
-            data: { "name": $("#name").val(),"age":$("#age").val()},  /*提交的資料（json格式），從輸入框中獲取*/
-            /*result為后端函式回傳的json*/
-            success: function (result) {
-                if (result.message == "success!") {
-                    alert(result.message+"你的帳號ID是"+result.name)
-                }
-                else {
-                    alert(result.message)
-                }
-            }
-        });
-    }
 </script>
 </body>
 <!-- Button trigger modal -->
