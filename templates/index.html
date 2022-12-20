@@ -137,7 +137,8 @@
 <br>
 <br>
 <!--創建button按鈕，點擊則激發submit()事件-->
-<button onclick="submit();">Send</button>
+<button onclick="myFunction()">Send</button>
+<p id="demo"></p>
 <a href="/miki/templates/index">
     <button type="reset">Clean</button>
 </a>
@@ -154,24 +155,10 @@
         crossorigin="anonymous">
 </script>
 <script>
-    /*在這里撰寫submit()事件*/
-    function submit() {
-        $.ajax({
-            url: "submit", /*資料提交到submit處*/
-            type: "GET",  /*采用POST方法提交*/
-            data: { "name": $("#name").val(),"age":$("#age").val()},  /*提交的資料（json格式），從輸入框中獲取*/
-            /*result為后端函式回傳的json*/
-            success: function (result) {
-                if (result.message == "success!") {
-                    alert(result.message+"你的帳號ID是"+result.name)
-                }
-                else {
-                    alert(result.message)
-                }
-            }
-        });
-    }
-</script>
+  function myFunction(){
+    document.getElementById("demo").innerHTML="Hello World";
+  }
+  </script>
 </body>
 <!-- Button trigger modal -->
 <br>
