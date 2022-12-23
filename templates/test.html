@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-wdith, initial-scale=1.0">
-		<meta charset="UTF-8">
-		<title>Ajax test</title>
-	</head>
-	<body>
-		<h1>Ajax 練習</h1>
-		<button onclick="getData();">取得連線資料</button>
-		<div id="result"></div>
-		<script>
-			function getData(){
-				fetch("https://cwpeng.github.io/live-records-samples/data/products.json").then(function(response){
-					return response.json();
-				}).then(function(data){
-					let result=document.querySelector("#result");
-					result.innerHTML="";
-					for(let i=0;i<data.length;i++){
-						let products=data[i];
-						result.innerHTML+="</div>"+products.name+","+products.price+","+products.description+"</div>";
-					}
-				});
-			}
-		</script>
-	</body>
+    <head>
+        <title>Test Web</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../static/test1.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </body>
 </html>
