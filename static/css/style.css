@@ -75,7 +75,7 @@ body{
     justify-content: center;
     
 }
-.dots ::before{
+.dots::before{
     content: '';
     top: -3px;
     position: absolute;
