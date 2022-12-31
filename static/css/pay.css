@@ -9,7 +9,7 @@ body{
     padding:20px; 
     border:3px gray solid;
     border-radius: 10px;
-    margin-right:120px;
+    margin-right:50px;
     float:left;
     }
 #card2{
@@ -20,7 +20,7 @@ body{
     padding:20px;
     border:3px gray solid;
     border-radius: 10px;
-    margin-right:120px;
+    margin-right:50px;
     float:left;
     }
 #card3{
@@ -31,7 +31,7 @@ body{
     padding:20px;
     border:3px gray solid;
     border-radius: 10px;
-    margin-right:120px;
+    margin-right:50px;
     float:left;
     }
 #card4{
@@ -42,8 +42,8 @@ body{
     padding:20px;
     border:3px gray solid;
     border-radius: 10px;
-    margin-left:200px;
-    margin-right:120px;
+    margin-left:150px;
+    margin-right:50px;
     float:left;
     }
 #card5{
@@ -54,6 +54,6 @@ body{
     padding:20px;
     border:3px gray solid;
     border-radius: 10px;
-    margin-right:120px;
+    margin-right:60px;
     float:left;
     }
