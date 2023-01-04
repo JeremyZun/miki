@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    background-color: black;
+    
+    
+}
+video{
+    left: 50%;
+    transform: translate(150%,-0%);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+h1{
+    color: red;
+
+}
