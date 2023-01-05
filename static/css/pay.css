@@ -74,10 +74,7 @@ body{
     border-radius: 50%; 
     background: orangered; border: orangered;
 }
-.btn-ball:hover{
-    transform:translateY(-32px);
-    box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.8);
-}
+
 #img{
     position: fixed;
     border-radius: 50%;
