@@ -67,12 +67,56 @@ body{
     float: left;
 
     position:absolute; 
-    bottom:15px; 
-    right:15px; 
+    bottom:10px; 
+    right:10px; 
     height: 70px; 
     width: 70px; 
     border-radius: 50%; 
     background: orangered; border: orangered;
+}
+.text-border{
+    width: 180px;
+    height: 300px;
+    background-image: linear-gradient(to top, #008b8b,  #9F0050);
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    position:absolute;
+    bottom:5px;
+    right:10px;
+}
+.add{
+    position: absolute;
+
+    top: 260px;
+    right: 143px;
+    transition: 0.5s;
+}
+.om-bg{
+    position: absolute;
+    background: #fff;
+    width: 181px;
+    height: 40px;
+    bottom: 0;
+}
+.add:hover{
+    border-radius: 50%;
+    background: gray;
+    transition: 0.5s;
+}
+.text{
+    border-radius: 5px;
+    width: 140px;
+    bottom:5px;
+    left: 34px;
+    position: absolute;
+    top: 260px;
+    transition: 0.5s;
+}
+
+.btn-ball:hover{
+    background: black;
+    transition: 1s;
 }
 
 #img{
