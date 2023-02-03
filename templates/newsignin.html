@@ -1,0 +1,55 @@
+<hmtl>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="../static/css/signin.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link href="../static/userfill.ico" rel="shortcut icon" type="image/ico" />
+    </head>
+    <body>
+    <div class="form-box">
+        <h1>Sign In Here</h1>
+        
+        <form action="#">
+        <div class="input-box">
+            <i class="ri-mail-line" id="icons"></i>
+            <input type="email" placeholder="example@gmail.com" required>
+        </div>
+        <div class="input-box">
+            <i class="ri-key-2-line" id="icons"></i>
+            <input type="password" placeholder="Password" id="myInput" required>
+            <span class="eye" onclick="psd()">
+                <!--
+                <i class="ri-eye-fill" id="hide1"></i>
+                <i class="ri-eye-off-fill" id="hide2"></i>
+                -->
+            </span>
+        </div>
+        
+        <input type="submit" value="LOGIN" class="login-btn">
+        </form>
+        <div class="footer">
+            <a id="arrow" href="../templates/index.html"><i class="ri-arrow-left-line" ></i></a>
+            <a href="../templates/forgot.html" class="forget">Forgot Password?</a>
+        </div>
+    </div>
+        <script>
+            function psd(){
+                var x = document.getElementById('myInput')
+                var y = document.getElementById('hide1')
+                var z = document.getElementById('hide2')
+
+                if(x.type === 'password'){
+                    x.type = "text";
+                    y.style.display = "block";
+                    z.style.display= "none";
+                }
+                else{
+                    x.type = "password";
+                    y.style.display = "none";
+                    z.style.display= "block";
+                }
+            }
+        </script>
+    </body>
+</hmtl>
