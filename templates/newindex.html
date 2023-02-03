@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <a href="../templates/index.html" class="logo"><i class="ri-home-6-fill"></i><span>LOGO</span></a>
+
+            <ul class="navbar">
+                <li><a href="../templates/about.html" target="_blank" class="active">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">test</a></li>
+            </ul>
+
+            <div class="main">
+                <div id="toggle">
+                    <i class="indicator"></i>
+                </div>
+                <script>
+                    const body = document.querySelector('body');
+                    const toggle = document.getElementById('toggle');
+                    toggle.onclick = function(){
+                        toggle.classList.toggle('active');
+                        body.classList.toggle('active')
+                    }
+                </script>
+                <a href="../templates/signin.html" class="user"><i class="ri-user-fill"></i>Login</a>
+                <a href="../templates/signup.html">Register</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+
+        <script type="text/javascript" src="../js/script.js"></script>
+
+    </body>
+</html>
