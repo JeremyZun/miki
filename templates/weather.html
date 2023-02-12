@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+</html>
+<head>
+    <link rel="stylesheet" href="../static/css/weather.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <section class="main">
+      <section class="inputs">
+        <input type="text" placeholder="Enter any city..." id="cityinput">
+        <input type="submit" value="Submit" id="add">
+        <button placeholder="submit" id="add"></button>
+      </section>
+
+      <section class="display">
+        <div class="wrapper">
+          <h2 id="cityoutput"><a href="../templates/newindex.html"><i class="ri-arrow-left-line"></i></a></h2>
+          <p id="description"></p>
+          <p id="temp"></p>
+          <p id="wind"></p>
+        </div>
+      </section>
+    </section>
+
+    <script src="../js/weather.js"></script>
+
+  </div>
+</body>
+
+</html>
