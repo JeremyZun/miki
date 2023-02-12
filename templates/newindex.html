@@ -15,16 +15,39 @@
         <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     </head>
     <body>
-        
         <header>
-            <a href="#" class="logo"><i class="ri-home-6-fill"></i><span>LOGO</span></a>
+            <a href="../templates/newindex.html" class="logo"><i class="ri-home-6-fill"></i><span>LOGO</span></a>
 
             <ul class="navbar">
                 <li><a href="../templates/about.html" target="_blank" class="active">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">IDK</a></li>
+                <li><a href="../templates/service.html">Services</a></li>
+                <li>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="myFunction()">Blog
+                            <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content" id="myDropdown">
+                            <a href="https://omlet.gg/profile/miki_come_back" target="_blank">Omlet Info</a>
+                            <a href="#">None</a>
+                            <a href="#">None</a>
+                            </div>
+                        </div>
+                </li>
+                <li><a href="../templates/weather.html">test</a></li>
+                <li>
+                    <span><input type="text" class="query" name="" value="" id="mysearch"><button class="searchbtn" onclick="document.getElementById('mysearch').value=''"><i class="ri-search-line"></i></button></span>
+                    <script>
+                        document.addEventListener("keyup", function(event) {
+                        let query = document.querySelector('.query');
+                        let searchbtn = document.querySelector('.searchbtn');
+                        if (event.keyCode === 13) {
+                            let url = 'https://www.google.com/search?q='+query.value;
+                            window.open(url);
+
+                        }
+                    });
+                    </script>
+                </li>
             </ul>
 
             <div class="main">
@@ -44,8 +67,37 @@
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
         </header>
+        
+        <script>
+            let query = document.querySelector('.query');
+            let searchbtn = document.querySelector('.searchbtn');
 
-        <script type="text/javascript" src="../js/newscript.js"></script>
+            searchbtn.onclick = function(){
+                let url = 'https://www.google.com/search?q='+query.value;
+                window.open(url);
+            }
+        </script>
+
+        <script>        
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+            }
+        }
+        }
+        </script>
+
+        <script type="text/javascript" src="../js/script.js"></script>
+        
 
     </body>
 </html>
